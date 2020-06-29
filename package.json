@@ -1,0 +1,26 @@
+{
+  "name": "apirestnode",
+  "version": "1.0.0",
+  "description": "**   Modelo de uma api simples com NODEJS e Mysql para persistencia de dados **",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreFirmoo/APIRestNode.git"
+  },
+  "author": "Andre Firmo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndreFirmoo/APIRestNode/issues"
+  },
+  "homepage": "https://github.com/AndreFirmoo/APIRestNode#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
