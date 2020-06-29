@@ -1,9 +1,6 @@
-const express = require(`express`)
+const customExpress = require('./Config/customExpress')
 
-const app = express()
+app = customExpress()
 
 app.listen(3000, () => console.log('Server running in port 3000'))
 
-app.get('/Atendimentos', (requisao, resposta) =>{
-    resposta.send('Atendimentos WORKS')
-})
