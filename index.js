@@ -1,6 +1,18 @@
-const customExpress = require('./Config/customExpress')
+const customExpress = require('./Config/CustomExpress')
+const conexao =  require(`./Config/conexao`)
+const tabala  = require(`./Config/Tabelas`)
 
-app = customExpress()
 
-app.listen(3000, () => console.log('Server running in port 3000'))
+conexao.connect((error)=>{
+    if (error){
+        console.log(error); 
+    }else{
+        console.log(`connect`);
+        tabala.init(conexao)
+        app = customExpress()
+
+        app.listen(3000, () => console.log('Server running in port 3000'))
+    }
+})
+
 
